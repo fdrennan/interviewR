@@ -1,0 +1,85 @@
+---
+title: "Quantum Assessment"
+author: "Freddy Drennan"
+date: "3/4/2019"
+output: html_document
+resource_files:
+- daily_data.rda
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+```
+
+# The Birthday Problem
+
+Assumptions:
+
+1. Birthdays are equally likely between Jan 1 and Dec 31. 
+2. Leap years are ignored
+3. $n$: people are in a room
+4. $p$: the probability that at least two people in the room share a birthday
+
+Using ggplot, display the value of $p$ against $n$. 
+
+```{r}
+library(tidyverse)
+```
+
+
+# The Advertising Problem
+
+You are running an advertising campaign with Facebook and have data available to make decisions about the allocation of your budget. You are tasked to allocate $500 dollars of budget among three advertisments which have historical performance data by writing a linear program. 
+
+Data Available from February.
+
++ $s_n$ - Dollars spent for advertisements in the prior month for advertisement $n$. Called `amount_spent`.
++ $i_n$ - Impressions obtained with $s$ dollars in the prior month for advertisement $n$. Called `impressions_obtained`.
++ $c_n$ - Clicks obtained with $s$ dollars in the prior month for advertisement $n$. Called `clicks_obtained`.
++ $k_n$ - The Key Performance Indicator: $\frac{i_n}{s_n}$ 
++ $x_n$ - Budgets for the new month. Your decision variables.
+
+You have 500 dollars to spend this month and three advertisments, while maximizing impressions. The budget allocated to each advertisement is $x_1...x_3$ respectively. 
+
+$$
+\begin{align}
+max\;\;\;\;\;\;                &  x^T k\\
+s.t.\;\;\;\;\;\;               & \:\: \\
+                               & \sum_{i=1}^n x_i = 500 \\
+                               & x_i >= 25 \:\; \forall\;\;i\\
+                               & x_1 - x_2 >= 0 \\
+                               & x_3 + x_2 <= 400
+\end{align}
+$$
+
+The data below is available for your decision making. 
+
+```{r, message=FALSE, warning=FALSE}
+advertisement_data <- tibble(
+  advertisement_name   = paste0("Advertisement: ", 1:3),
+  amount_spent         = c(100, 125, 200),
+  impressions_obtained = c(1000, 1530, 105),
+  clicks_obtained      = c(250, 350, 600)
+)
+
+advertisement_data
+```
+
+
+## Bonus 1:
+Add a constraint to keep expected clicks above 1350
+
+## Bonus 2:
+Add a constraint to force $x_3$ to always receive at least thirty percent of the total budget allocated to $x_2$ and $x_3$. 
+
+For example, if the sum of advertisment 2 and 3 is 250 dollars, then $250 = x_2 + x_3$ and $x_3 >= .3 (x_2 + x_3)$
+
+
+# EDA
+
+Take the file from the repo called `daily_data.rda` and do an EDA. What do you find? The lowest level of an advertisment is an adgroup id. 
+
+$$
+\text{Adgroup Id} \subset\text{Campaign Id} \subset\text{Advertiser Id} \subset\text{LP Id}
+$$
+
