@@ -11,21 +11,24 @@ resource_files:
 knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 ```
 
+## Recommended Packages 
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(purrr)
+library(lpSolve)
+```
+
 # The Birthday Problem
 
 Assumptions:
 
 1. Birthdays are equally likely between Jan 1 and Dec 31. 
 2. Leap years are ignored
-3. $n$: people are in a room
+3. $n$: people in a room
 4. $p$: the probability that at least two people in the room share a birthday
 
 Using ggplot, display the value of $p$ against $n$. 
-
-```{r}
-library(tidyverse)
-```
-
 
 # The Advertising Problem
 
