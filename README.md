@@ -1,5 +1,5 @@
 # interviewR
-An R repo with questions for a Quantum interviewee. The questions are specified below but any data required to solve the problem is either in `Quantum_Assessment.Rmd` or `daily_data.rda`.
+An R repo with questions for a Quantum interviewee. The questions are specified below but any data required to solve the problem is either in `Quantum_Assessment.Rmd` or `daily_data.rda`. If desired, the latex in this file can be rendered in RStudio or in the `Quantum_Assessment` file.
 
 Please return you solution in a well organized and clean RMarkdown file. Clean and well documented code is highly encouraged. Extensive use of tidyverse tools is recommended.  
 
