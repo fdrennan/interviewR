@@ -29,6 +29,16 @@ Data Available from February.
 
 You have 500 dollars to spend this month and three advertisments, while maximizing impressions. The budget allocated to each advertisement is $x_1...x_3$ respectively. 
 
+$$
+\begin{align}
+max\;\;\;\;\;\;                &  x^T k\\
+s.t.\;\;\;\;\;\;               & \:\: \\
+                               & \sum_{i=1}^n x_i = 500 \\
+                               & x_i >= 25 \:\; \forall\;\;i\\
+                               & x_1 - x_2 >= 0 \\
+                               & x_3 + x_2 <= 400
+\end{align}
+$$
 
 ## Bonus 1:
 Add a constraint to keep expected clicks above 1350

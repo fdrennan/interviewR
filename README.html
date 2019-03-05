@@ -400,6 +400,16 @@ $(document).ready(function () {
 <li><span class="math inline">\(x_n\)</span> - Budgets for the new month. Your decision variables.</li>
 </ul>
 <p>You have 500 dollars to spend this month and three advertisments, while maximizing impressions. The budget allocated to each advertisement is <span class="math inline">\(x_1...x_3\)</span> respectively.</p>
+<p><span class="math display">\[
+\begin{align}
+max\;\;\;\;\;\;                &amp;  x^T k\\
+s.t.\;\;\;\;\;\;               &amp; \:\: \\
+                               &amp; \sum_{i=1}^n x_i = 500 \\
+                               &amp; x_i &gt;= 25 \:\; \forall\;\;i\\
+                               &amp; x_1 - x_2 &gt;= 0 \\
+                               &amp; x_3 + x_2 &lt;= 400
+\end{align}
+\]</span></p>
 <div id="bonus-1" class="section level2">
 <h2>Bonus 1:</h2>
 <p>Add a constraint to keep expected clicks above 1350</p>
