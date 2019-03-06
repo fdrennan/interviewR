@@ -15,20 +15,8 @@ knitr::opts_chunk$set(message = FALSE, warning = FALSE)
 ```{r}
 library(tidyverse)
 library(ggplot2)
-library(purrr)
 library(lpSolve)
 ```
-
-# The Birthday Problem
-
-Assumptions:
-
-1. Birthdays are equally likely between Jan 1 and Dec 31. 
-2. Leap years are ignored
-3. $n$: people in a room
-4. $p$: the probability that at least two people in the room share a birthday
-
-Using ggplot, display the value of $p$ against $n$. 
 
 # The Advertising Problem
 
@@ -78,9 +66,7 @@ Add a constraint to force $x_3$ to always receive at least thirty percent of the
 For example, if the sum of advertisment 2 and 3 is 250 dollars, then $250 = x_2 + x_3$ and $x_3 >= .3 (x_2 + x_3)$
 
 
-# EDA
-
-Denver Crime Data
+EDA: Denver Crime Data
 ================
 
 Please use the included data in `/denver-crime-data` to answer the
