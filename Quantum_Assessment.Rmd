@@ -77,7 +77,7 @@ write-up, code, plots, etc., that you used in your analysis.
     see?
 2.  Do you see any patterns in Denver crime related to neighborhood or
     time-of-day?
-3.  What other intersting insight(s) have you discovered about Denver
+3.  What other interesting insight(s) have you discovered about Denver
     crime?
 
 
