@@ -78,9 +78,7 @@ Add a constraint to force $x_3$ to always receive at least thirty percent of the
 For example, if the sum of advertisment 2 and 3 is 250 dollars, then $250 = x_2 + x_3$ and $x_3 >= .3 (x_2 + x_3)$
 
 
-# EDA
-
-Denver Crime Data
+EDA: Denver Crime Data
 ================
 
 Please use the included data in `/denver-crime-data` to answer the
