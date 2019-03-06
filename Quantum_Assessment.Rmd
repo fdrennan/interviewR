@@ -3,8 +3,6 @@ title: "Quantum Assessment"
 author: "Freddy Drennan"
 date: "3/4/2019"
 output: html_document
-resource_files:
-- daily_data.rda
 ---
 
 ```{r setup, include=FALSE}
