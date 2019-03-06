@@ -80,9 +80,19 @@ For example, if the sum of advertisment 2 and 3 is 250 dollars, then $250 = x_2 
 
 # EDA
 
-Take the file from the repo called `daily_data.rda` and do an EDA. What do you find? The lowest level of an advertisment is an adgroup id. 
+Denver Crime Data
+================
 
-$$
-\text{Adgroup Id} \subset\text{Campaign Id} \subset\text{Advertiser Id} \subset\text{LP Id}
-$$
+Please use the included data in `/denver-crime-data` to answer the
+questions that follow. Be sure to push back to this repo any and all
+write-up, code, plots, etc., that you used in your analysis.
+
+1.  Are they any alarming or reassuring trends in Denver crime that you
+    see?
+2.  Do you see any patterns in Denver crime related to neiborhood or
+    time-of-day?
+3.  What other intersting insight(s) have you discovered about Denver
+    crime?
+
+
 
