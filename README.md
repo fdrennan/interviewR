@@ -1,12 +1,5 @@
 # interviewR
-An R repo with questions for a Quantum interviewee. The questions are specified below but any data required to solve the problem is either in `Quantum_Assessment.Rmd` or `daily_data.rda`. 
-Please return your solution as a PR in a well organized and clean RMarkdown file. Clean and well documented code is highly encouraged. Extensive use of tidyverse tools is recommended.  
-
-
-The Birthday Problem
-================
-
-This is a simple problem designed to see how you break down a problem, functions used, and the cleanliness of a solution. Bonus points for parameterized functions intended to generalize the solution. 
+An R repo with questions for a Quantum interviewee. Please return your solution as a PR in a well organized and clean RMarkdown file. Clean and well documented code is highly encouraged. Extensive use of tidyverse tools is recommended.  
 
 ## The Advertising Problem
 
